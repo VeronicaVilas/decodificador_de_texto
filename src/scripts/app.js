@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const InputText = document.querySelector('.main-inputdata-textarea textarea');
     const OutputText = document.querySelector('.main-outputdata-paragraph');
     const encryptButton = document.querySelector('.main-inputdata-button-encrypt');
+    const decryptButton = document.querySelector('.main-inputdata-button-decrypt');
     const hideImage = document.querySelector('.main-outputdata-img img');
     const hideText = document.querySelector('.main-outputdata-subtitle');
 
@@ -33,4 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         return textEncrypted;
     }
+
+    decryptButton.addEventListener('click', function() {
+        const  originalText = InputText.value.trim();
+        const textDecrypted =  originalText.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u')
+        OutputText.textContent = textDecrypted;
+        hideImage.style.display = 'none';
+        hideText.style.display = 'none';
+    });
 });
