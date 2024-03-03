@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const InputText = document.querySelector('.main-inputdata-textarea textarea');
+    const InputText = document.querySelector('.main-inputdata-text textarea');
     const OutputText = document.querySelector('.main-outputdata-paragraph');
     const encryptButton = document.querySelector('.main-inputdata-button-encrypt');
     const decryptButton = document.querySelector('.main-inputdata-button-decrypt');
