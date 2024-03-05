@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Ephesis');
 
 * {
     margin: 0;
@@ -8,23 +8,25 @@
 }
 
 body {
-    background-color: #c7ddb5;
+    background: url('/assets/images/background.jpg') no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
 .header-title {
-    margin: 20px 0px 0px 20px;
-    font-family: "Micro 5", sans-serif;
+    margin: 1% 0% 0% 4%;
+    font-family: "Fredericka the Great", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
+    color: #fff;
 }
 
 main {
     width: 100%;
-    margin: 32px;
+    margin: 3%;
     display: flex;
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Ephesis", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -33,12 +35,12 @@ main {
     width: 680px;
     height: 328px;
     margin-left: 208px;
-    margin-top: 10px;
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Ephesis", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 36px;
     background: none;
     border: none;
+    color: #fff;
 }
 
 .main-inputdata-information {
@@ -50,12 +52,12 @@ main {
 
 .main-inputdata-information-icon {
     font-size: 16px;
-    color: #495057;
+    color: tomato;
 }
 
 .main-inputdata-text {
-    font-size: 12px;
-    color: #495057;
+    font-size: 20px;
+    color: tomato;
 
 }
 
@@ -71,40 +73,37 @@ main {
     width: 328px;
     gap: 8px;
     border-radius: 24px;
-    padding: 16px;
+    border: 1px dashed #fff;
+    padding: 10px;
     margin-top: 8px;
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Ephesis", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-}
-
-.main-inputdata-button-encrypt {
-    background-color: #0A3871;
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .main-inputdata-button-encrypt:hover {
-    background-color: #D8DFE8;
-}
-
-.main-inputdata-button-decrypt {
-    background-color: #D8DFE8;
+    background-color: #333;
 }
 
 .main-inputdata-button-decrypt:hover {
-    background-color: #0A3871;
+    background-color: tomato;
 }
 
 .main-outputdata {
     width: 370px;
-    height: 542px;
-    background: #FFFFFF;
+    height: 562px;
+    background: transparent;
     border-radius: 32px;
-    margin-top: -100px;
+    margin-top: -108px;
     margin-left: 32px;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px dashed #fff;
 }
 
 .main-outputdata-img {
@@ -113,30 +112,33 @@ main {
 }
 
 .main-outputdata-subtitle {
-    font-size: 24px;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     margin: 8px;
+    color: #fff;
 }
 
 .main-outputdata-paragraph {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
-    color: #495057;
+    color: #fff;
     margin: 8px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    padding: 1rem;
-    font-size: 14px;
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 18px;
+    font-family: "Fredericka the Great", sans-serif;
     font-weight: 400;
     gap: 8px;
-    margin-top: -20px;
+    margin-top: -40px;
+    color: #fff;
 }
 
 .footer a {
     margin-top: 2px;
-    color: black;
+    color: #fff;
 }
