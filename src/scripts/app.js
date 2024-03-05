@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const InputText = document.querySelector('.main-inputdata-text textarea');
-    const OutputText = document.querySelector('.main-outputdata-paragraph');
+    const OutputText = document.querySelector('.main-outputdata-outputText');
     const encryptButton = document.querySelector('.main-inputdata-button-encrypt');
     const decryptButton = document.querySelector('.main-inputdata-button-decrypt');
     const hideImage = document.querySelector('.main-outputdata-img img');
     const hideText = document.querySelector('.main-outputdata-subtitle');
+    const hideParagraph = document.querySelector('.main-outputdata-paragraph');
 
     encryptButton.addEventListener('click', function() {
         const originalText = InputText.value.trim();
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         OutputText.textContent = textEncrypted;
         hideImage.style.display = 'none';
         hideText.style.display = 'none';
+        hideParagraph.style.display = 'none';
     });
 
     function criptografarTexto(text) {
@@ -41,5 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
         OutputText.textContent = textDecrypted;
         hideImage.style.display = 'none';
         hideText.style.display = 'none';
+        hideParagraph.style.display = 'none';
     });
 });
