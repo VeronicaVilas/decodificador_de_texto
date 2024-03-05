@@ -10,7 +10,6 @@
 body {
     background: url('/assets/images/background.jpg') no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 .header-title {
@@ -185,6 +184,27 @@ main {
     .footer {
         margin-top: 8px;
         margin-bottom: 8px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .main-inputdata-text-textarea {
+        width: 343px;
+        margin-left: 16px;
+    }
+
+    .main-inputdata-information {
+        margin-left: 16px;
+    }
+
+    .main-inputdata-button {
+        margin-left: 16px;
+    }
+
+    .main-outputdata {
+        width: 343px;
+        margin-left: 16px;
     }
 }
 
