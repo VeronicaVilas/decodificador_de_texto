@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const OutputText = document.querySelector('.main-outputdata-outputText');
     const encryptButton = document.querySelector('.main-inputdata-button-encrypt');
     const decryptButton = document.querySelector('.main-inputdata-button-decrypt');
-    const hideImage = document.querySelector('.main-outputdata-img img');
+    const hideImage = document.querySelector('.main-outputdata-img');
     const hideText = document.querySelector('.main-outputdata-subtitle');
     const hideParagraph = document.querySelector('.main-outputdata-paragraph');
+    const copyButton = document.querySelector('.main-outputdata-copyButton');
 
     encryptButton.addEventListener('click', function() {
         const originalText = InputText.value.trim();
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hideImage.style.display = 'none';
         hideText.style.display = 'none';
         hideParagraph.style.display = 'none';
+        copyButton.style.display = 'block';
     });
 
     function criptografarTexto(text) {
@@ -44,5 +46,19 @@ document.addEventListener("DOMContentLoaded", function() {
         hideImage.style.display = 'none';
         hideText.style.display = 'none';
         hideParagraph.style.display = 'none';
+        copyButton.style.display = 'block';
+    });
+
+    copyButton.addEventListener('click', function() {
+        const textToCopy = OutputText.textContent;
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                copyButton.classList.add('copied');
+                setTimeout(function() {
+                    copyButton.classList.remove('copied');
+                }, 2500);
+            })
+            .catch({
+            });
     });
 });
