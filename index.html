@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de texto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header-title"><span>.</span>Decodificador de texto<span>.</span></h1>
+        <h1 class="header-title">Encrypto</h1>
     </header>
     <main class="main">
         <section class="main-inputdata">
-            <div class="main-inputdata-textarea">
-                <textarea name="text" cols="30" rows="10">Digite seu texto</textarea>
+            <div class="main-inputdata-text">
+                <textarea class="main-inputdata-text-textarea" name="text" cols="30" rows="10">Digite seu texto</textarea>
             </div>
             <div class="main-inputdata-information">
                 <i class="main-inputdata-information-icon fa-solid fa-circle-exclamation"></i>
@@ -26,15 +26,16 @@
             </div>
         </section>
         <section class="main-outputdata">
-              <div class="main-outputdata-img">
-                <img src="/assets/images/decoder_img.svg" alt="garoto sentado com um notebook em frente a uma tela decodificadora com lupa.">
+              <div>
+                <img class="main-outputdata-img" src="/assets/images/decoder_img.png" alt="garota em pé com uma com expressão de dúvida e uma interrogação na cabeça.">
               </div>
               <h2 class="main-outputdata-subtitle">Nenhuma mensagem encontrada</h2>
               <p class="main-outputdata-paragraph">Digite um texto que você deseja criptografar ou descriptografar.</p>
+              <p class="main-outputdata-outputText"></p>
         </section>
     </main>
     <footer class="footer">
-        <p>Criado por: <span>Verônica Vilas</span> |</p>
+        <p>Desenvolvido por: <span>Verônica Vilas</span> |</p>
         <a href="https://github.com/VeronicaVilas" class="fa-brands fa-github"></a>
         <a href="https://www.linkedin.com/in/ver%C3%B4nica-vilas-b23242209/" class="fa-brands fa-linkedin-in"></a>
     </footer>
