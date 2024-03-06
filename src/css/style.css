@@ -92,6 +92,7 @@ main {
 }
 
 .main-outputdata {
+    position: relative;
     width: 370px;
     height: 562px;
     background: transparent;
@@ -135,10 +136,9 @@ main {
 }
 
 .main-outputdata-copyButton {
-    position: fixed;
+    position: absolute;
     padding: 10px;
     width: 50px;
-    margin-top: 450px;
     background: transparent;
     color: #fff;
     font-size: 18px;
@@ -147,6 +147,8 @@ main {
     border-radius: 10px;
     cursor: pointer;
     display: none;
+    bottom: 20px; 
+    left: 20px;
 }
 
 .main-outputdata-copyButton:active {
@@ -217,7 +219,7 @@ main {
     }
 
     .main-inputdata-button {
-        margin-left: 40px;
+        margin-left: 4px;
     }
 
     .main-outputdata {
@@ -229,6 +231,10 @@ main {
 
     .main-outputdata-img {
         display: none;
+    }
+
+    .main-outputdata-copyButton {
+        left: 620px;
     }
 
     .footer {
@@ -257,6 +263,10 @@ main {
     .main-outputdata {
         width: 343px;
         margin-left: 16px;
+    }
+
+    .main-outputdata-copyButton {
+        left: 280px;
     }
 
     .footer {
