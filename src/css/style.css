@@ -92,6 +92,7 @@ main {
 }
 
 .main-outputdata {
+    position: relative;
     width: 370px;
     height: 562px;
     background: transparent;
@@ -134,6 +135,57 @@ main {
     color: #fff;
 }
 
+.main-outputdata-copyButton {
+    position: absolute;
+    padding: 10px;
+    width: 50px;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    border: 1px dashed #fff;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    bottom: 20px; 
+    left: 20px;
+}
+
+.main-outputdata-copyButton:active {
+    background: #fff;
+    color: black;
+}
+
+.main-outputdata-copyButton:before {
+    content: "Copiado";
+    position: absolute;
+    top: -45px;
+    right: -10px;
+    background: #fff;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+}
+
+.main-outputdata-copyButton:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.main-outputdata-copyButton.copied:before,
+.main-outputdata-copyButton.copied:after {
+    display: block;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -167,7 +219,7 @@ main {
     }
 
     .main-inputdata-button {
-        margin-left: 40px;
+        margin-left: 4px;
     }
 
     .main-outputdata {
@@ -181,9 +233,14 @@ main {
         display: none;
     }
 
+    .main-outputdata-copyButton {
+        left: 620px;
+    }
+
     .footer {
         margin-top: 8px;
         margin-bottom: 8px;
+        margin-left: 40px;
     }
 }
 
@@ -191,6 +248,7 @@ main {
 
     .main-inputdata-text-textarea {
         width: 343px;
+        height: 200px;
         margin-left: 16px;
     }
 
@@ -205,6 +263,14 @@ main {
     .main-outputdata {
         width: 343px;
         margin-left: 16px;
+    }
+
+    .main-outputdata-copyButton {
+        left: 280px;
+    }
+
+    .footer {
+        margin-left: 24px;
     }
 }
 
