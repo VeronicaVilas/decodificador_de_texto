@@ -15,8 +15,7 @@ Este é um projeto desenvolvido para o programa ONE (Oracle Next Education) em p
 
 ## Demo
 A demonstração pode ser acessada através do link:
-
-[Demonstração]()
+https://veronicavilas.github.io/decodificador_de_texto/
 
 ## Técnicas e tecnologias utilizadas
 
@@ -25,3 +24,5 @@ A demonstração pode ser acessada através do link:
 ![Ícone do JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 👀 Veja o projeto
+
+![demonstration_img](https://github.com/VeronicaVilas/decodificador_de_texto/assets/135287830/69764008-b53a-4924-9e0a-ee2435a81b4e)
