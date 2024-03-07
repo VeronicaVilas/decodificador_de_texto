@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Ephesis');
 
+:root {
+    --main-color:#fff;
+    --secondary-color: tomato;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 main {
@@ -31,32 +35,32 @@ main {
 }
 
 .main-inputdata-text-textarea {
-    width: 680px;
-    height: 328px;
-    margin-left: 208px;
+    width: 42.5rem;
+    height: 20.5rem;
+    margin-left: 13rem;
     font-family: "Ephesis", sans-serif;
     font-weight: 400;
     font-size: 36px;
     background: none;
     border: none;
-    color: #fff;
+    color:var(--main-color);
 }
 
 .main-inputdata-information {
     display: flex;
     align-items: center;
-    margin-left: 208px;
+    margin-left: 13rem;
     gap: 8px;
 }
 
 .main-inputdata-information-icon {
     font-size: 16px;
-    color: tomato;
+    color: var(--secondary-color);
 }
 
 .main-inputdata-text {
     font-size: 20px;
-    color: tomato;
+    color: var(--secondary-color);
 
 }
 
@@ -65,20 +69,20 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    margin-left: 208px;
+    margin-left: 13rem;
 }
 
 .main-inputdata-button-encrypt, .main-inputdata-button-decrypt {
-    width: 328px;
+    width: 20.5rem;
     gap: 8px;
     border-radius: 24px;
-    border: 1px dashed #fff;
+    border: 1px dashed var(--main-color);
     padding: 10px;
     margin-top: 8px;
     font-family: "Ephesis", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #fff;
+    color: var(--main-color);
     background-color: transparent;
     cursor: pointer;
 }
@@ -88,26 +92,26 @@ main {
 }
 
 .main-inputdata-button-decrypt:hover {
-    background-color: tomato;
+    background-color: var(--secondary-color);
 }
 
 .main-outputdata {
     position: relative;
-    width: 370px;
-    height: 562px;
+    width: 23.1rem;
+    height: 35.1rem;
     background: transparent;
     border-radius: 32px;
-    margin-top: -108px;
+    margin-top: -6.75rem;
     margin-left: 32px;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px dashed #fff;
+    border: 1px dashed var(--main-color);
 }
 
 .main-outputdata-img {
-    width: 120px;
+    width: 7.5rem;
     margin-left: 30%;
 }
 
@@ -117,13 +121,13 @@ main {
     font-style: normal;
     text-align: center;
     margin: 8px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .main-outputdata-paragraph {
     font-size: 20px;
     text-align: center;
-    color: #fff;
+    color: var(--main-color);
     margin: 8px;
 }
 
@@ -132,7 +136,7 @@ main {
     font-weight: 400;
     font-size: 36px;
     text-align: left;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .main-outputdata-copyButton {
@@ -140,9 +144,9 @@ main {
     padding: 10px;
     width: 50px;
     background: transparent;
-    color: #fff;
+    color: var(--main-color);
     font-size: 18px;
-    border: 1px dashed #fff;
+    border: 1px dashed var(--main-color);
     outline: none;
     border-radius: 10px;
     cursor: pointer;
@@ -152,7 +156,7 @@ main {
 }
 
 .main-outputdata-copyButton:active {
-    background: #fff;
+    background: var(--main-color);
     color: black;
 }
 
@@ -161,7 +165,7 @@ main {
     position: absolute;
     top: -45px;
     right: -10px;
-    background: #fff;
+    background: var(--main-color);
     color: black;
     padding: 8px 10px;
     border-radius: 20px;
@@ -176,7 +180,7 @@ main {
     right: 20px;
     width: 10px;
     height: 10px;
-    background: #fff;
+    background: var(--main-color);
     transform: rotate(45deg);
     display: none;
 }
@@ -194,12 +198,12 @@ main {
     font-weight: 400;
     gap: 8px;
     margin-top: -40px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .footer a {
     margin-top: 2px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 @media (max-width:768px) {
@@ -209,8 +213,8 @@ main {
         flex-direction: column;
     }
     .main-inputdata-text-textarea {
-        width: 688px;
-        height: 328px;
+        width: 43rem;
+        height: 20.5rem;
         margin-left: 40px;
     }
 
@@ -223,7 +227,7 @@ main {
     }
 
     .main-outputdata {
-        width: 688px;
+        width: 43rem;
         height: auto;
         margin-top: 40px;
         margin-left: 40px;
@@ -234,7 +238,7 @@ main {
     }
 
     .main-outputdata-copyButton {
-        left: 620px;
+        left: 38.75rem;
     }
 
     .footer {
@@ -247,8 +251,8 @@ main {
 @media (max-width:375px) {
 
     .main-inputdata-text-textarea {
-        width: 343px;
-        height: 200px;
+        width: 21.4rem;
+        height: 12.5rem;
         margin-left: 16px;
     }
 
@@ -261,12 +265,12 @@ main {
     }
 
     .main-outputdata {
-        width: 343px;
+        width: 21.4rem;
         margin-left: 16px;
     }
 
     .main-outputdata-copyButton {
-        left: 280px;
+        left: 17.5rem;
     }
 
     .footer {
