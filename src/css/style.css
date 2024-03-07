@@ -12,7 +12,7 @@
 }
 
 body {
-    background: url('https://br.freepik.com/fotos-gratis/textura-de-lousa-de-estilo-grunge_4540248.htm#query=background%20quadro%20negro&position=0&from_view=keyword&track=ais&uuid=0b7a9b1e-ab67-4f4d-85bc-ca406b4dca01') no-repeat;
+    background: url('/assets/images/background.png') no-repeat;
     background-size: cover;
 }
 
